@@ -7,7 +7,7 @@
     if($conn->connect_error){
         die('connection failed  :   '.$conn->connect_error);
     }else{
-        $stmt = $conn->prepare("insert into formregistrasi(Nickname, WA/instagram)
+        $stmt = $conn->prepare("insert into form registrasi(Nickname, WA/instagram)
             values(?, ?)");
         $stmt->bind_param("ss",$Nickname, $WA/instagram);
         $stmt->execute();
