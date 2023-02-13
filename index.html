@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <div class="login-box">
-  <h2>BUFF LAND</h2>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./style.css">
-
+    <title>Buff Land</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
 </head>
 <body>
 
-  <form action="connect.php" method="post">
-    <div class="user-box">
-      <input type="text" id="name" name="Name" >
-      <label>IGN</label>
-    </div>
-    <div class="user-box">
-      <input type="text" id="message" name="Message" >
-      <label>L.buff</label>
-    </div>
-    <a href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <button>Kirim</button>
-    </a>
-  </form>
-</div>
-  
+    <h1>Contact</h1>
+
+    <form action="connect.php" method="post">
+
+        <label for="name">IGN</label>
+        <input type="text" id="name" name="name">
+
+        <label for="priority">Buff</label>
+        <select id="priority" name="priority">
+            <option value="1">HP</option>
+            <option value="2" selected>MP</option>
+            <option value="3">AMPR</option>
+            <option value="4">CRT</option> 
+            <option value="5">DTE</option>
+            <option value="6">AGGRO</option>
+            <option value="7">WATK</option>
+        </select>
+
+        <label>
+            <input type="checkbox" name="terms">
+            Sudah yakin?
+        </label>
+
+        <br>
+
+        <button>Send</button>
+
+    </form>
+
 </body>
 </html>
